@@ -1,4 +1,6 @@
 FROM debian:9.4-slim
+LABEL maintainer="Joel Luth (joelluth@gmail.com)"
+LABEL description="Test filesystem performance with kernel untar/build"
 
 RUN apt-get update      \
  && apt-get -y -q install \
