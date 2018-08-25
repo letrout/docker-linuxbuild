@@ -9,7 +9,9 @@ RUN apt-get update      \
         libelf-dev \
         libssl-dev \
         wget    \
- && apt-get clean
+ && apt-get clean \
+ && apt-get autoremove -y \
+ && rm -rf /var/lib/apt/lists/*
 
 #ENV LINUX_VER=4.16.1
 #ENV LINUX_DIR=/kernel \
